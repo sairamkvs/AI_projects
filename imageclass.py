@@ -19,7 +19,7 @@ clf = RandomForestClassifier(n_estimators=100)
 clf.fit(X_train, y_train)
 
 # Load the image you want to classify
-image_path = r"C:\Users\SAI RAM\Desktop\dog_play_concerns.jpg"  # replace with your image path
+image_path = r"https://github.com/sairamkvs/AI_projects/blob/main/depositphotos_160957810-stock-photo-golden-retriever-dog.jpg"  # replace with your image path
 image = Image.open(image_path).convert('L')  # convert image to grayscale
 image = image.resize((8, 8))  # resize image to 8x8 pixels
 image = np.array(image)  # convert image to numpy array
